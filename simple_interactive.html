@@ -2,10 +2,15 @@
 <html lang="eng">
     <head>
         <title>Simple interactive Webpage</title>
+        <script>
+            function changeText() {
+                document.getElementById("message").innerHTML = "Im gonna bust!";
+            }
+        </script>
     </head>
     <body>
         <h2>Click the button to see what happens</h2>
-        <p>Hello World!</p>
-        <button>Click me</button>
+        <p id="message">Hello World!</p>
+        <button onclick="changeText()">Click me</button>
     </body>
 </html>
